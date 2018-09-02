@@ -9,6 +9,16 @@ import './assets/css/index.css';
 
 // 导入路由模块
 import router from './routers'
+// 导入axios
+import axios from 'axios';
+
+// axios.defaults.baseURL = 'http://localhost:3001/';
+// // 在vue的原型上加上axios属性;
+// Vue.prototype.$axios = axios;
+
+import MyHttp from './plugins/MyHttp.js';
+
+Vue.use(MyHttp);
 
 new Vue({
     el: '#app',
